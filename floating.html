@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Floating</title>
+<style>
+ 
+</style>
+</head>
+<body>
+
+
+<!-- 01. A simple use of the float property -->
+<p>In the paragraph below, we have added an image with style <b>float:right</b>. The result is that the image will float to the right in the paragraph.</p>
+<p><img src="w3css.gif" width="100" height="140">
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</p>
+
+<!-- 02. An image with border and margins that floats to the right in a paragraph -->
+<p>In the paragraph below, the image will float to the right. A dotted black border is added to the image. 
+We have also added margins to the image to push the text away from the image:
+0 px margin on the top and right side, 15 px margin on the bottom, and 20 px margin on the left side of the image.
+</p>
+
+<p><img src="w3css.gif" width="100" height="140">
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</p>
+
+<!-- 03. An image with a caption that floats to the right -->
+<div>
+<img src="w3css.gif" width="100" height="140"><br>CSS is fun!
+</div>
+
+<p>
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</p>
+
+<p>
+In the paragraph above, the div element is 120 pixels wide and it contains the image.
+The div element will float to the right. Margins are added to the div to push the text away from the div.
+Borders and padding are added to the div to frame in the picture and the caption.
+</p>
+
+<!-- 04. Let the first letter of a paragraph float to the left -->
+<p>
+<span>T</span>his is some text.
+This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</p>
+
+<p>
+In the paragraph above, the first letter of the text is embedded in a span element.
+The span element has a width that is 0.7 times the size of the current font.
+The font-size of the span element is 400% (quite large) and the line-height is 80%.
+The font of the letter in the span will be in "Algerian".
+</p>
+
+<!-- 05. Create side-by-side images -->
+<h2>Images Side by Side</h2>
+<p>Float images side by side:</p>
+
+<div class="clearfix">
+  <div class="img-container">
+    <img src="img_5terre.jpg" alt="Italy" style="width:100%">
+  </div>
+  <div class="img-container">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="img-container">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+<p>Note that we also use the clearfix hack to take care of the layout flow, and that add the box-sizing property to make sure that the image container doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+
+
+
+</body>
+</html>

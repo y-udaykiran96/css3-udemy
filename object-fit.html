@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<title>Object-Fit</title>
+<head>
+<style>
+
+/* 01. Cut off the sides of an image, preveserving the aspect ratio, and fill in the space   */
+ 
+
+/* 02. An example of all object-fit property values  */  
+
+</style>
+</head>
+<body>
+
+<!-- 01. Cut off the sides of an image, preveserving the aspect ratio, and fill in the space   -->
+<h2>Using object-fit</h2>
+<p>Here we use "object-fit: cover;", so when we resize the browser window, the aspect ratio of the images is preserved:</p>
+
+<div style="width:100%;height:400px;">
+  <img src="https://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg" alt="Norway" style="float:left;width:50%;height:100%;object-fit:cover;">
+  <img src="https://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg" alt="Paris" style="float:left;width:50%;height:100%;object-fit:cover;">
+</div>
+ 
+
+<!-- 02. An example of all object-fit property values   --> 
+<h1>The object-fit Property</h1>
+
+<h2>No object-fit:</h2>
+<img src="https://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg" alt="Paris" style="width:200px;height:400px">
+
+<h2>object-fit: fill (this is default):</h2>
+<img class="fill" src="https://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg" alt="Paris" style="width:200px;height:400px">
+
+<h2>object-fit: contain:</h2>
+<img class="contain" src="https://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg" alt="Paris" style="width:200px;height:400px">
+
+<h2>object-fit: cover:</h2>
+<img class="cover" src="https://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg" alt="Paris" style="width:200px;height:400px">
+
+<h2>object-fit: scale-down:</h2>
+<img class="scale-down" src="https://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg" alt="Paris" style="width:200px;height:400px">
+
+<h2>object-fit: none:</h2>
+<img class="none" src="https://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg" alt="Paris" style="width:200px;height:400px"> 
+
+
+</body>
+</html>

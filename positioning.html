@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Positioning</title>
+<style>
+
+/*01. Position an element relative to the browser window*/
+
+
+/*02. Position an element relative to its normal position*/
+
+
+/*03. Position an element with an absolute value*/
+
+
+/*04. Sticky positioning*/
+
+
+/*05. Overlapping elements*/
+
+
+/*06. Set the shape of an element*/
+
+
+/*07. Set the top edge of an image using a pixel value */
+
+
+/* 08. Set the bottom edge of an image using a pixel value */
+
+
+/* 09. Set the left edge of an image using a pixel value */
+
+
+/* 10. Set the right edge of an image using a pixel value */
+
+
+/* 11. Position image text (centered) */
+
+
+</style>
+</head>
+<body>
+
+<!-- 01. Position an element relative to the browser window -->
+<h2>position: fixed;</h2>
+
+<p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+
+<div class="fixed">
+This div element has position: fixed;
+</div>
+
+<!-- 02. Position an element relative to its normal position -->
+<h2>position: relative;</h2>
+
+<p>An element with position: relative; is positioned relative to its normal position:</p>
+
+<div class="relative">
+This div element has position: relative;
+</div>
+
+<!-- 03. Position an element with an absolute value -->
+<h2>position: absolute;</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+<div class="relative">This div element has position: relative;
+<div class="absolute">This div element has position: absolute;</div>
+</div>
+
+<!-- 04. Sticky positioning -->
+<p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+<p>Note: IE/Edge 15 and earlier versions do not support sticky position.</p>
+
+<div class="sticky">I am sticky!</div>
+
+<div style="padding-bottom:2000px">
+<p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+<p>Scroll back up to remove the stickyness.</p>
+<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+<!-- 05. Overlapping elements -->
+<h1>This is a heading</h1>
+<img src="https://pbs.twimg.com/profile_images/577891129938477056/YzwGMqAt_400x400.png" width="100" height="140">
+<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+
+<!-- 06. Set the shape of an element -->
+<img src="https://pbs.twimg.com/profile_images/577891129938477056/YzwGMqAt_400x400.png" width="100" height="140">
+
+<!-- 07. Set the top edge of an image using a pixel value -->
+<img src="https://pbs.twimg.com/profile_images/577891129938477056/YzwGMqAt_400x400.png" width="42" height="42">
+<h1>This is a heading</h1>
+
+<!-- 08. Set the bottom edge of an image using a pixel value -->
+<img class="ex1" src="https://pbs.twimg.com/profile_images/577891129938477056/YzwGMqAt_400x400.png" width="42" height="42">
+<h1>This is a heading</h1>
+<img class="ex2" src="https://pbs.twimg.com/profile_images/577891129938477056/YzwGMqAt_400x400.png" width="42" height="42">
+
+<!-- 09. Set the left edge of an image using a pixel value -->
+<h1>This is a heading</h1>
+<img src="https://pbs.twimg.com/profile_images/577891129938477056/YzwGMqAt_400x400.png" width="42" height="42">
+
+<!-- 10. Set the right edge of an image using a pixel value -->
+<h1>This is a heading</h1>
+<img src="https://pbs.twimg.com/profile_images/577891129938477056/YzwGMqAt_400x400.png" width="42" height="42">
+
+<!-- 11. Position image text (centered) -->
+<h2>Image Text</h2>
+<p>Center text in image:</p>
+
+<div class="container">
+<img src="https://c1.staticflickr.com/9/8742/16819873556_862840687c.jpg" alt="Cinque Terre" width="1000" height="300">
+<div class="center">Centered</div>
+</div>
+
+
+</body>
+</html>

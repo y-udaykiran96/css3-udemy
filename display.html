@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Display</title>
+<style>
+/*01. How to hide an element */
+
+/*02. How to not display an element (display:none) */
+
+
+/*03. How to display a block-level element as an inline element */
+
+
+
+
+/*04. How to display an inline element as a block-level element */
+
+
+/*05. How to to use CSS together with JavaScript to show hidden content */
+
+
+</style>
+</head>
+<body>
+
+<h1>This is a visible heading</h1>
+<h1 class="hidden">This is a hidden heading</h1>
+<p>Notice that the hidden heading still takes up space.</p>
+
+<!-- Start 03. How to display a block-level element as an inline element -->
+<h3>Difference between display:none and visiblity: hidden</h3>
+<p><strong>visibility:hidden</strong> hides the element, but it still takes up space in the layout.</p>
+<p><strong>display:none</strong> removes the element from the document. It does not take up any space.</p>
+
+<div class="imgbox" id="imgbox1">Box 1<br>
+<img src="img_5terre.jpg" alt="Italy" style="width:100%">
+<button onclick="removeElement()">Remove</button>
+</div>
+<div class="imgbox" id="imgbox2">Box 2<br>
+<img src="img_lights.jpg" alt="Lights" style="width:100%">
+<button onclick="changeVisibility()">Hide</button>
+</div>
+<div class="imgbox">Box 3<br>
+<img src="img_forest.jpg" alt="Forest" style="width:100%">
+<button onclick="resetElement()">Reset All</button>
+</div>
+
+<script>
+function removeElement() {
+document.getElementById("imgbox1").style.display = "none";
+}
+
+function changeVisibility() {
+document.getElementById("imgbox2").style.visibility = "hidden";
+}
+
+function resetElement() {
+document.getElementById("imgbox1").style.display = "block";
+document.getElementById("imgbox2").style.visibility = "visible";
+}
+</script>
+
+<!-- End 03. How to display a block-level element as an inline element -->
+
+<!-- 04. How to display an inline element as a block-level element -->
+<span>A display property with a value of "block" results in</span> <span>a line break between the two elements.</span>
+
+<!-- Start 05. How to to use CSS together with JavaScript to show hidden content -->
+<p class="flip" onclick="myFunction()">Click to show panel</p>
+
+<div id="panel">
+<p>This panel contains a div element, which is hidden by default (display: none).</p>
+<p>It is styled with CSS and we use JavaScript to show it (display: block).</p>
+<p>How it works: Notice that the p element with class="flip" has an onclick attribute attached to it. When the user clicks on the p element, a function called myFunction() is executed, which changes the style of the div with id="panel" from display:none (hidden) to display:block (visible).</p>
+<p>You will learn more about JavaScript in our JavaScript Tutorial.</p>
+</div>
+
+<script>
+function myFunction() {
+document.getElementById("panel").style.display = "block";
+}
+</script>
+<!-- End 05. How to to use CSS together with JavaScript to show hidden content -->
+
+</body>
+</html>

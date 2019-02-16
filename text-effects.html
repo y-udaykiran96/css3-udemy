@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<title>Text Effects</title>
+<head>
+<style>
+
+/* 01. Specify how hidden, overflowed content should be signaled to the user   */
+
+
+/* 02. How to display the overflowed content when hover over the element  */ 
+
+
+/* 03. Allow long words to be able to be broken and wrap onto the next line   */ 
+ 
+
+/* 04. Specify line breaking rules   */ 
+
+
+</style>
+</head>
+<body>
+
+<!-- 01. Specify how hidden, overflowed content should be signaled to the user   -->
+<h1>The text-overflow Property</h1>
+<p>The following two paragraphs contains a long text that will not fit in the box.</p>
+
+<h2>text-overflow: clip:</h2>
+<p class="test1">This is some long text that will not fit in the box</p>
+
+<h2>text-overflow: ellipsis:</h2>
+<p class="test2">This is some long text that will not fit in the box</p>
+ 
+
+<!-- 02. How to display the overflowed content when hover over the element   -->
+<p>Hover over the two divs below, to see the entire text.</p>
+<div class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+<br>
+<div class="test" style="text-overflow:clip;">This is some long text that will not fit in the box</div> 
+
+<!-- 03. Allow long words to be able to be broken and wrap onto the next line    -->
+<h1>The word-wrap Property</h1>
+
+<p class="test"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p> 
+
+<!-- 04. Specify line breaking rules   --> 
+<h1>The word-break Property</h1>
+
+<p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
+
+<p class="test2">This paragraph contains some text. The lines will break at any character.</p>
+
+<p><b>Note:</b> The word-break property is not supported in Opera 12 and earlier versions.</p> 
+
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<title>CSS Attribute Selectors</title>
+<head>
+<style>
+
+/* 01. Selects all a elements with a target attribute   */
+ 
+
+/* 02. Selects all a elements with a target=_blank attribute  */ 
+ 
+
+/* 03. Selects all elements with a title attribute that contains a space-separated list of words, one of which is flower   */ 
+ 
+
+/* 04. Selects all elements with a class attribute value that begins with top (must be whole word)   */
+ 
+
+/* 05. Selects all elements with a class attribute value that begins with top (must not be whole word)   */ 
+ 
+
+/* 06. Selects all elements with a class attribute value that ends with test   */
+
+
+/* 07. Selects all elements with a class attribute value that contains test */  
+  
+
+</style>
+</head>
+<body>
+
+<!-- 01. Selects all a elements with a target attribute   -->
+<p>The links with a target attribute gets a yellow background:</p>
+
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+<p><b>Note:</b> For [<i>attribute</i>] to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+ 
+
+<!-- 02. Selects all a elements with a target=_blank attribute   -->
+<p>The link with target="_blank" gets a yellow background:</p>
+
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+<p><b>Note:</b> For [<i>attribute</i>] to work in IE8 and earlier, a DOCTYPE must be declared.</p> 
+
+<!-- 03. Selects all elements with a title attribute that contains a space-separated list of words, one of which is flower    -->
+<p>All images with the title attribute containing the word "flower" get a yellow border.</p>
+
+<img src="klematis.jpg" title="klematis flower" width="150" height="113">
+<img src="img_flwr.gif" title="flower" width="224" height="162">
+<img src="img_tree.gif" title="tree" width="200" height="358">
+
+<p><b>Note:</b> For [<i>attribute</i>~=<i>value</i>] to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+ 
+
+<!-- 04. Selects all elements with a class attribute value that begins with top (must be whole word)   -->
+<h1 class="top-header">Welcome</h1>
+<p class="top-text">Hello world!</p>
+<p class="topcontent">Are you learning CSS?</p>
+
+<p><b>Note:</b> For [<i>attribute</i>|=<i>value</i>] to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+ 
+
+<!-- 05. Selects all elements with a class attribute value that begins with top (must not be whole word)   -->
+<h1 class="top-header">Welcome</h1>
+<p class="top-text">Hello world!</p>
+<p class="topcontent">Are you learning CSS?</p>
+
+<p><b>Note:</b> For [<i>attribute</i>^=<i>value</i>] to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+ 
+
+<!-- 06. Selects all elements with a class attribute value that ends with test -->
+<div class="first_test">The first div element.</div>
+<div class="second">The second div element.</div>
+<div class="my-test">The third div element.</div>
+<p class="mytest">This is some text in a paragraph.</p>
+
+
+<!-- 07. Selects all elements with a class attribute value that contains test -->
+<div class="first_test">The first div element.</div>
+<div class="second">The second div element.</div>
+<div class="my-test">The third div element.</div>
+<p class="mytest">This is some text in a paragraph.</p>
+ 
+
+
+</body>
+</html>
